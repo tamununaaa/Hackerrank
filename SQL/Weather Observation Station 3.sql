@@ -1,5 +1,6 @@
-Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Your result cannot contain duplicates.
-
+/*
+Query a list of CITY names from STATION for cities that have an even ID number. 
+Print the results in any order, but exclude duplicates from the answer.
 The STATION table is described as follows:
             CITY
     FIELD            TYPE
@@ -10,7 +11,7 @@ The STATION table is described as follows:
     LAT_W            NUMBER
  
 where LAT_N is the northern latitude and LONG_W is the western longitude.
+*/
 
 Answer.
-SELECT DISTINCT(CITY) FROM STATION WHERE CITY LIKE '%a' OR CITY LIKE '%e' OR CITY LIKE '%i' OR CITY LIKE '%o' 
-OR CITY LIKE '%u';      
+SELECT DISTINCT(CITY) FROM STATION WHERE MOD(ID,2)=0;

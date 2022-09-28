@@ -1,3 +1,4 @@
+/*
 Query all columns (attributes) for a city in the CITY table where the ID is 1661.
 
 The CITY table is described as follows:
@@ -8,7 +9,7 @@ The CITY table is described as follows:
     COUNTRYCODE      VARCHAR2(3)
     DISTRICT         VARCHAR(20)
     POPULATION       NUMBER
-
+*/
 
 Answer. 
 SELECT * FROM CITY 

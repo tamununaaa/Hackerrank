@@ -1,4 +1,5 @@
-Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+/*
+Query all columns (attributes) for a city in the CITY table where the ID is 1661.
 
 The CITY table is described as follows:
             CITY
@@ -8,8 +9,8 @@ The CITY table is described as follows:
     COUNTRYCODE      VARCHAR2(3)
     DISTRICT         VARCHAR(20)
     POPULATION       NUMBER
-
+*/
 
 Answer. 
-SELECT NAME FROM CITY
-WHERE COUNTRYCODE="USA" AND POPULATION>120000;
+SELECT * FROM CITY
+WHERE ID="1661";
